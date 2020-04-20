@@ -18,7 +18,7 @@ class ggtest::selva (
         class { 'firewalld':
           service_ensure => 'stopped',
           service_enable => false,
-          #add a test
+#Remove a line for test
         }
       }
     }
