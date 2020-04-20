@@ -22,7 +22,7 @@ mod 'herculesteam/augeasproviders_pam', '2.1.0'
 mod 'puppetlabs-support_tasks', '1.1.0'
 mod 'puppetlabs-sqlserver', '2.6.2'
 mod 'puppetlabs-splunk_hec', '0.7.1'
-
+mod 'puppetlabs-motd', '4.1.0'
 #For CD4PE
 mod 'puppetlabs-cd4pe', '1.4.1'
 mod 'puppetlabs-hocon', '1.1.0'
