@@ -30,3 +30,4 @@ mod 'puppetlabs-puppet_authorization', '0.5.0'
 mod 'puppetlabs-docker', '3.9.1'
 mod 'puppetlabs-pipelines', '1.0.1'
 mod 'puppetlabs-cd4pe_jobs', '1.0.0'
+#adding a test
