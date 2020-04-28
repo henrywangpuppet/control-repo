@@ -86,11 +86,11 @@ haproxy::balancermember { 'member3' :
 }
 
 haproxy::balancermember { 'member4' :
- listening_service => $rule2,
- server_names      => $backendserver_name2,
- ipaddresses       => $backendserver_ipaddress2,
- ports             => $ports2,
- options           => 'check',
+  listening_service => $rule2,
+  server_names      => $backendserver_name2,
+  ipaddresses       => $backendserver_ipaddress2,
+  ports             => $ports2,
+  options           => 'check',
 }
 
 

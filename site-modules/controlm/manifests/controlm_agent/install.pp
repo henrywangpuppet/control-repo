@@ -14,7 +14,7 @@ changes => [
   "set service-name[port = '${a2s_port}'][protocol = 'udp']/#comment 'Control-M agent2server'",
   "set service-name[port = '${a2s_port}'][protocol = 'tcp'] ctmagent",
   "set service-name[port = '${a2s_port}'][protocol = 'tcp']/#comment 'Control-M agent2server'",
- ],
+  ],
 }
 
   # use shellscript and sudo as running the install direct as user ctmagent gives HOME errors plus we get errors in the log file
@@ -28,7 +28,7 @@ changes => [
   }
 
   case $::os['release']['major']{
-     '6': {
+    '6': {
             service { 'ctm.sh':
               ensure    => running,
               enable    => true,
@@ -37,7 +37,7 @@ changes => [
               require   => [File['/etc/rc.d/init.d/ctm.sh'],Exec['controlm_agent_install'],]
             }
       }
-      '7': {
+    '7': {
 
             service { 'ctm.sh':
               enable    => false,

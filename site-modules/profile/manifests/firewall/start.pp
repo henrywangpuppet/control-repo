@@ -17,9 +17,7 @@ class profile::firewall::start {
   #Set up the chains (if specified)
   $chains = lookup('profile::firewall::chains', Data , 'deep', {})
   create_resources( firewallchain, $chains, { policy => 'drop', before => undef, ensure => 'present' } )
-  
-
-  # Default pre rules
+# Default pre rules
   ['INPUT','OUTPUT'].each | $chain | {
     firewall { "000 accept all icmp ${chain}":
       proto  => 'icmp',

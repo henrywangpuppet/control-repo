@@ -13,9 +13,9 @@ class profile::firewall::app_rules {
         default    => '',
       }
       if has_key( $rule, 'jump') {
-         $default = {}
+        $default = {}
       } else {
-         $default = { action => 'accept' }
+        $default = { action => 'accept' }
       }
       if $rule['destination'] {
         if is_array( $rule['destination'] ){

@@ -54,7 +54,7 @@ class controlm::controlm_agent::files inherits controlm::controlm_agent {
   }
 
   case $::os['release']['major']{
-     '6': {
+    '6': {
             file { '/etc/rc.d/init.d/ctm.sh':
               ensure  => link,
               target  => '/apps/bmc/ctm/scripts_optus/ctm.sh',
@@ -63,7 +63,7 @@ class controlm::controlm_agent::files inherits controlm::controlm_agent {
               require => File['/apps/bmc/ctm/scripts_optus/ctm.sh'],
             }
       }
-     '7': {
+    '7': {
 
             file { '/etc/rc.d/init.d/ctm.sh':
               ensure  => absent,
