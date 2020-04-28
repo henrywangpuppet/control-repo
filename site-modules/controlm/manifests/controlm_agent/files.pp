@@ -63,7 +63,7 @@ class controlm::controlm_agent::files inherits controlm::controlm_agent {
               require => File['/apps/bmc/ctm/scripts_optus/ctm.sh'],
             }
       }
-      '7': {
+     '7': {
 
             file { '/etc/rc.d/init.d/ctm.sh':
               ensure  => absent,
@@ -77,7 +77,6 @@ class controlm::controlm_agent::files inherits controlm::controlm_agent {
               source  => 'puppet:///modules/controlm/ctm.sh',
               notify  => Exec['systemctl reload daemon for Control-M agent']
             }
-            
             exec{'systemctl reload daemon for Control-M agent':
               path        => $::path,
               command     => 'systemctl daemon-reload',
