@@ -1,10 +1,8 @@
 ---
 # Puppet agent conf data
 puppet_enterprise::profile::agent::manage_puppet_conf: true
-puppet_enterprise::profile::agent::pcp_broker_list:
-- devcompilemaster.gdc.standardchartered.com:8142 ### Compile_Master load balancer FQDN
-puppet_enterprise::profile::agent::server_list:
-- devcompilemaster.gdc.standardchartered.com:8140 ### Compile_Master load balancer FQDN
+puppet_enterprise::profile::agent::pcp_broker_list: ["devcompilemaster.gdc.standardchartered.com:8142"] ### Compile_Master load balancer FQDN
+puppet_enterprise::profile::agent::server_list: ["devcompilemaster.gdc.standardchartered.com:8140"] ### Compile_Master load balancer FQDN
 
 # Configured the Complile Maser load balancer FQDN in Puppet.conf file
 pe_repo::compile_master_pool_address: devcompilemaster.gdc.standardchartered.com
