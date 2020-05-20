@@ -8,7 +8,7 @@ puppet_enterprise::profile::agent::server_list:
 
 
 # Configured the Complile Maser load balancer FQDN in Puppet.conf file
-pe_repo::compile_master_pool_address: devcompilemaster.gdc.standardchartered.com
+#pe_repo::compile_master_pool_address: devcompilemaster.gdc.standardchartered.com
 
 # Configure the Puppet Agent to pull update from compile master load balancer FQDN
-puppet_agent::source: "https://devcompilemaster.gdc.standardchartered.com:8140/packages"
+#puppet_agent::source: "https://devcompilemaster.gdc.standardchartered.com:8140/packages"
