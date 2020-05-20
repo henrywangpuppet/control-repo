@@ -2,9 +2,9 @@
 # Puppet agent conf data
 puppet_enterprise::profile::agent::manage_puppet_conf: true
 puppet_enterprise::profile::agent::pcp_broker_list: 
-  - 'devcompilemaster.gdc.standardchartered.com:8142'
+- 'devcompilemaster.gdc.standardchartered.com:8142'
 puppet_enterprise::profile::agent::server_list: 
-  - 'devcompilemaster.gdc.standardchartered.com:8140'
+- 'devcompilemaster.gdc.standardchartered.com:8140'
 
 
 # Configured the Complile Maser load balancer FQDN in Puppet.conf file
