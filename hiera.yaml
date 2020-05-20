@@ -10,6 +10,5 @@ hierarchy:
     paths:
       - "nodes/%{trusted.certname}.yaml"
       - "common.yaml"
-  - name: "Compiler Data"
-    paths: 
-      - "role/%{facts.trusted.extensions.pp_role}.yaml"
+  - name: "Compile Master Data"
+    path: "role/%{facts.trusted.extensions.pp_role}.yaml"
